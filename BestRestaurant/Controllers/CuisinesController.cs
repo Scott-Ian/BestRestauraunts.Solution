@@ -34,5 +34,17 @@ namespace BestRestaurants.Controllers
       return RedirectToAction("Index");
     }
     
+    public ActionResult Details(int id)
+    {
+      var thisCuisine = _db.Cuisines.FirstOrDefault(cuisine => cuisine.CuisineId == id);
+      return View(thisCuisine);
+    }
+
+    public ActionResult Edit(int id)
+    {
+      var thisCuisine = _db.Cuisines.FirstOrDefault(cuisine => cuisine.CuisineId == id);
+      return View(thisCuisine);
+    }
+    
   }
 }
