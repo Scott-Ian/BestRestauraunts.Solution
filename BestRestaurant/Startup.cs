@@ -46,7 +46,6 @@ namespace BestRestaurants
       {
         await context.Response.WriteAsync("Something went wrong!");
       });
-      
     }
   }
 }
