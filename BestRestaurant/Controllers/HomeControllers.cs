@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
-using ProjectName.Models;
+using BestRestaurants.Models;
 
-namespace ProjectName.Controllers
+namespace BestRestaurants.Controllers
 {
   public class HomeController : Controller
   {

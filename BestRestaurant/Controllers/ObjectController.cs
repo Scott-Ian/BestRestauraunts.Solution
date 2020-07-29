@@ -1,8 +1,8 @@
 using Microsoft.AspNetCore.Mvc;
-using ProjectName.Models;
+using BestRestaurants.Models;
 using System.Collections.Generic;
 
-namespace ProjectName.Controllers
+namespace BestRestaurants.Controllers
 {
   public class ObjectPlural_Controller : Controller
   {

@@ -20,10 +20,10 @@ _Long description._
 1. This program utilizes .NET version 3.1, and requires this framework to be pre-installed:
     * Please go to https://dotnet.microsoft.com/download/dotnet-core/2.2 and install the SDK   version 2.2 or greater patch version, but do not upgrade to a higher minor version number.
 2. Clone this repository onto your computer: https://github.com/...
-3. In your preferred terminal window, navigate into PROJECTNAME.SOLUTIONS/PROJECTNAME using cd (i.e. cd desktop/PROJECTNAME.SOLUTIONS/PROJECTNAME) and open the project with your preferred code editor.
+3. In your preferred terminal window, navigate into BestRestaurants.SOLUTIONS/BestRestaurants using cd (i.e. cd desktop/BestRestaurants.SOLUTIONS/BestRestaurants) and open the project with your preferred code editor.
 4. Run the following terminal command: $ dotnet restore
 5. To initiate this program, run the command: $ dotnet run
-6. To run the test suite included with this project, within the terminal navigate into PROJECTNAME.TESTS and run the following commands:
+6. To run the test suite included with this project, within the terminal navigate into BestRestaurants.TESTS and run the following commands:
     * $ dotnet restore
     * $ dotnet test
 

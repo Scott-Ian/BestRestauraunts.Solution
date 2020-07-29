@@ -1,4 +1,4 @@
-namespace ProjectName.Models
+namespace BestRestaurants.Models
 {
   public class Object
   {
