@@ -1,0 +1,20 @@
+@{
+  Layout = "_Layout";
+}
+
+@model BestRestaurants.Models.Cuisine
+
+<h2>Edit Cuisines</h2>
+
+<h4>Edit this Cuisine: @Html.DisplayFor(model => model.Style)</h4>
+
+@using (Html.BeginForm())
+{
+  @Html.HiddenFor(model => model.CuisineId)
+  @Html.LabelFor(model => model.Style)
+  @Html.EditorFor(model => model.Style)
+  <input type="submit" value="Save" />
+}
+
+<p>@Html.ActionLink("Back to list", "Index")</p>
+<p>@Html.ActionLink("Goin' Home?", "Index", "Home")</p>
