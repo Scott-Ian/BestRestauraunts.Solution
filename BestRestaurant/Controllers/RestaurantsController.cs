@@ -17,11 +17,11 @@ namespace BestRestaurants.Controllers
 
     public ActionResult Index()
     {
-      List<Restaurant> model = _db.Restaurant.Include(restaurant => restaurant.Cuisine);
+      List<Restaurant> model = _db.Restaurants.Include(restaurant => restaurant.Cuisine).ToList();
       return View(model);
     }
 
-    
+
 
   }
 }
