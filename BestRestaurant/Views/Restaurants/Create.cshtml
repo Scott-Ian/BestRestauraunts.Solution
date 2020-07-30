@@ -1,0 +1,33 @@
+@{
+  Layout = "_Layout";
+}
+
+@model BestRestaurants.Models.Restaurant
+
+<h4>You're starting a Restaurant?</h4>
+<p>How about RestaurNOT?!?!?!</p>
+<p> - Gordon Ramsey probably...</p>
+
+@using (Html.BeginForm())
+{
+  @Html.LabelFor(model => model.Name)
+  @Html.TextBoxFor(model => model.Name)
+
+  @Html.LabelFor(model => model.PriceScale)
+  @Html.TextBoxFor(model => model.PriceScale)
+
+  @Html.LabelFor(model => model.Rating)
+  @Html.TextBoxFor(model => model.Rating)
+
+  @Html.LabelFor(model => model.Description)
+  @Html.TextBoxFor(model => model.Description)
+
+  @Html.LabelFor(model => model.Atmosphere)
+  @Html.TextBoxFor(model => model.Atmosphere)
+
+
+  <input type="submit" value="Add new restaurant" />
+}
+
+<p>@Html.ActionLink("Show all Cuisines!", "Index")</p>
+<p>@Html.ActionLink("Go Home?", "Index", "Home")</p>
