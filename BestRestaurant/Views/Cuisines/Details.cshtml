@@ -2,15 +2,16 @@
   Layout = "_Layout";
 }
 
-@model BestRestauraunts.Models.Cuisine
+@using BestRestaurants.Models
+@model BestRestaurants.Models.Cuisine
 
 <h2>You have selected: @Model.Style Style!</h2>
 <hr>
 
 <ul>
-  @foreach(Restauraunt restauraunt in @Model.Restauraunts)
+  @foreach(Restaurant restaurant in @Model.Restaurants)
   {
-    <li>@restauraunt.Name</li>
+    <li>@restaurant.Name</li>
   }
 </ul>
 
